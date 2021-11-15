@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 60px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 24px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba($color: #000000, $alpha: 0.16);
+}
+
+.button-green {
+    color: white;
+    background-color: #B2D234; 
+}
+
+.button-white {
+    color: #B2D234;
+    background-color: white; 
+}
