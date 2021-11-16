@@ -68,6 +68,7 @@ body {
   font-size: 24px;
   border-radius: 5px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+  width: fit-content;
 }
 
 .button-green {
@@ -80,16 +81,22 @@ body {
   background-color: white;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 h2 {
   font-weight: 600;
   font-size: 52px;
   margin-bottom: 40px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 64px;
+  font-style: italic;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 12px;
 }
 
 P {
@@ -223,17 +230,78 @@ P {
 .menu > div:first-child {
   padding: 80px 0;
 }
-.menu > div:first-child div:nth-of-type(1) {
+.menu > div:first-child > div:first-child {
   margin: 0 auto;
   width: 800px;
   text-align: center;
 }
-.menu > div:first-child div:nth-of-type(1) h2 {
+.menu > div:first-child > div:first-child h2 {
   color: #B2D234;
 }
-.menu > div:first-child div:nth-of-type(1) p {
+.menu > div:first-child > div:first-child p {
   color: #606060;
   margin-bottom: 40px;
+}
+.menu > div:first-child .order-menu {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.menu > div:first-child .order-menu > div {
+  margin: 25px 25px;
+  width: 525px;
+}
+.menu > div:first-child .order-menu > :last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.menu > div:first-child .order-menu > :last-child h3 {
+  transform: rotate(-9deg);
+}
+.menu > div:first-child .order-menu > :last-child h3:nth-of-type(1) {
+  color: #B2D234;
+}
+.menu > div:first-child .order-menu > :last-child h3:nth-of-type(2) {
+  color: #60A0D8;
+}
+.menu > div:first-child .order-menu > :last-child p {
+  margin-top: 80px;
+  margin-bottom: 90px;
+  color: #606060;
+}
+.menu > div:first-child .order-menu article {
+  margin-bottom: 25px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  color: #606060;
+}
+.menu > div:first-child .order-menu article > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  color: #B2D234;
+}
+.menu > div:first-child .order-menu article:nth-of-type(3) {
+  border: solid 2px #B2D234;
+}
+.menu > div:first-child .order-menu h5 {
+  margin-top: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 124px;
+  height: 24px;
+  transform-origin: right;
+  position: relative;
+  left: calc(100% - 124px);
+  font-weight: 400;
+  font-size: 12px;
+  color: white;
+  background-color: #B2D234;
 }
 
 /*# sourceMappingURL=main.css.map */
