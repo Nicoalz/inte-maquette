@@ -300,3 +300,56 @@ P {
     
 
 }
+
+
+
+// Menu---------------------------------------------------------------------------
+.colors {
+    
+    background-image: url('./scss/img/colors_bg.png');
+    background-position: center;
+    background-size: cover;
+
+    > div:first-child {
+        padding: 140px 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+        
+    article {
+        margin: 15px 15px;
+        padding: 30px 0;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 630px;
+
+        div{
+            display: flex;
+        }
+
+        li {
+            margin-bottom: 14px;
+        }
+
+        ul {
+            margin: 0 25px;
+        }
+    }
+
+    article:nth-of-type(1) {
+        background-color: rgba(#B2D234, 0.85);
+    }
+
+    article:nth-of-type(2) {
+        background-color: rgba(#60A0D8, 0.85);
+    }
+
+    
+        
+    
+
+}
