@@ -264,6 +264,7 @@ P {
                 display: flex;
                 flex-direction: column;
                 color: #606060;
+                border: solid 2px transparent;
 
                 > div:first-child {
                     display: flex;
@@ -274,8 +275,19 @@ P {
             }
 
 
-            article:nth-of-type(3) {
+            .most-selled {
                 border: solid 2px #B2D234;
+                position: relative;
+
+                &::before {
+                    content: 'La plus vendue';
+                    position: absolute;
+                    right: -2px;
+                    bottom: 100%;
+                    background-color: #B2D234;
+                    padding: 6px 13px;
+                    color: white;
+                }
             }
 
             h5 {
@@ -285,7 +297,6 @@ P {
                 align-items: center;
                 width: 124px;
                 height: 24px;
-                transform-origin: right;
                 position: relative;
                 left: calc(100% - 124px);
                 font-weight: 400;

@@ -279,14 +279,25 @@ P {
   display: flex;
   flex-direction: column;
   color: #606060;
+  border: solid 2px transparent;
 }
 .menu > div:first-child .order-menu article > div:first-child {
   display: flex;
   justify-content: space-between;
   color: #B2D234;
 }
-.menu > div:first-child .order-menu article:nth-of-type(3) {
+.menu > div:first-child .order-menu .most-selled {
   border: solid 2px #B2D234;
+  position: relative;
+}
+.menu > div:first-child .order-menu .most-selled::before {
+  content: "La plus vendue";
+  position: absolute;
+  right: -2px;
+  bottom: 100%;
+  background-color: #B2D234;
+  padding: 6px 13px;
+  color: white;
 }
 .menu > div:first-child .order-menu h5 {
   margin-top: -25px;
@@ -295,7 +306,6 @@ P {
   align-items: center;
   width: 124px;
   height: 24px;
-  transform-origin: right;
   position: relative;
   left: calc(100% - 124px);
   font-weight: 400;
